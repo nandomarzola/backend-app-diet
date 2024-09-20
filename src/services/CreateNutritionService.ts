@@ -7,7 +7,7 @@ class CreateNutritionService {
         
         try {
 
-            const genAI = new GoogleGenerativeAI(process.env.API_KEY!);
+            const genAI = new GoogleGenerativeAI('AIzaSyC5Cyh4v-5UDN2msKpvB-YPsJjSJd197H4');
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
 
             const response = await model.generateContent(`Crie uma dieta completa para uma pessoa com nome: ${name} do sexo ${gender} 
